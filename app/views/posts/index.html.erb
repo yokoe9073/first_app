@@ -1,7 +1,11 @@
 <h1>Top page</h1>
 <%= link_to '新規投稿', '/posts/new'%>
 <% @posts.each do |post| %>
+<<<<<<< Updated upstream
  <div class="post">
+=======
+<div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
+>>>>>>> Stashed changes
   <div class="post-date">
    投稿日時：<%= post.created_at %>
   </div>
